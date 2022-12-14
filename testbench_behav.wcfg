@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="9,997 ps"></ZoomStartTime>
+      <ZoomEndTime time="10,001 ps"></ZoomEndTime>
+      <Cursor1Time time="9,997 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="282"></NameColumnWidth>
+      <ValueColumnWidth column_width="131"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject type="array" fp_name="/testbench/a">
+      <obj_property name="ElementShortName">a[7:0]</obj_property>
+      <obj_property name="ObjectShortName">a[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/b">
+      <obj_property name="ElementShortName">b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/c">
+      <obj_property name="ElementShortName">c[15:0]</obj_property>
+      <obj_property name="ObjectShortName">c[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/m0/pp0">
+      <obj_property name="ElementShortName">pp0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pp0[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/m0/pp1">
+      <obj_property name="ElementShortName">pp1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pp1[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/m0/pp2">
+      <obj_property name="ElementShortName">pp2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pp2[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/m0/pp3">
+      <obj_property name="ElementShortName">pp3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pp3[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/m0/pp4">
+      <obj_property name="ElementShortName">pp4[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pp4[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/m0/pp5">
+      <obj_property name="ElementShortName">pp5[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pp5[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/m0/pp6">
+      <obj_property name="ElementShortName">pp6[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pp6[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/testbench/m0/pp7">
+      <obj_property name="ElementShortName">pp7[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pp7[15:0]</obj_property>
+   </wvobject>
+</wave_config>

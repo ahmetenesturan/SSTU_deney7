@@ -1,0 +1,7 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sim_1/new/testbench.v,1670704194,verilog,,,,testbench,,,,,,,,
+/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v,1670705566,verilog,,/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sim_1/new/testbench.v,,MULTS;carry_look_ahead_16bit;carry_look_ahead_4bit;pp_gen,,,,,,,,
