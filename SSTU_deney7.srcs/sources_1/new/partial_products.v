@@ -65,12 +65,11 @@ module pp_gen(input [7:0] a, b, output [15:0] pp0, pp1, pp2, pp3, pp4, pp5, pp6,
     assign pp7 = pp7_i << 7;
 
 endmodule
+/*
 
-module baugh_wooley_gen(input [7:0] a, b, output [15:0] pp0, pp1, pp2, pp3, pp4, pp5, pp6, pp7);
+module baugh_wooley_gen(input [7:0] a, b, output [7:0] PP_BW [7:0]);
 
     wire [7:0] PP [7:0];
-    wire [7:0] PP_BW [7:0];
-    wire [15:0] PP_shift [7:0];
     genvar i;
     generate
         for(i = 0; i <= 7; i = i + 1) begin: PP_LOOP
@@ -99,3 +98,4 @@ module baugh_wooley_gen(input [7:0] a, b, output [15:0] pp0, pp1, pp2, pp3, pp4,
 
 
 endmodule
+*/

@@ -20,7 +20,20 @@ endmodule
 
 module MULTS_signed_tb;
 
+    reg signed [7:0] a,b;
+    wire signed [15:0] c;
 
+    MULTS_signed m0(a,b,c);
+
+    initial begin
+        a = 8'b10001000; //-120
+        b = 8'b00001010; //10
+        #10;
+        a = 8'b11011000; //-40
+        b = 8'b11100010; //-30
+        #10;
+        $finish;
+    end
 
 endmodule
 
@@ -47,6 +60,21 @@ endmodule
 
 
 module MAC_tb;
+
+/*
+dataset:
+
+0 4 0
+1 9 0
+0 8 6
+
+weight:
+
+-1 -1 -1
+-1  8 -1
+-1 -1 -1
+
+*/
 
 reg [23:0] data;
 

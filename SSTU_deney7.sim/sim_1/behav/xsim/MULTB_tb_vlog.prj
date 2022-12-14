@@ -1,6 +1,8 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../SSTU_deney7.srcs/sources_1/new/cla.v" \
 "../../../../SSTU_deney7.srcs/sources_1/new/main.v" \
+"../../../../SSTU_deney7.srcs/sources_1/new/partial_products.v" \
 "../../../../SSTU_deney7.srcs/sim_1/new/testbench.v" \
 
 # compile glbl module

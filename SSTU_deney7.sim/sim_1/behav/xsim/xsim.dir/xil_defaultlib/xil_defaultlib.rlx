@@ -3,5 +3,7 @@
 Oct 14 2022
 05:07:14
 /home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
-/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sim_1/new/testbench.v,1670704194,verilog,,,,testbench,,,,,,,,
-/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v,1670705566,verilog,,/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sim_1/new/testbench.v,,MULTS;carry_look_ahead_16bit;carry_look_ahead_4bit;pp_gen,,,,,,,,
+/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sim_1/new/testbench.v,1671056735,verilog,,,,MAC_tb;MULTB_tb;MULTS_signed_tb;MULTS_tb,,,,,,,,
+/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/cla.v,1670869742,verilog,,/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v,,carry_look_ahead_16bit;carry_look_ahead_4bit,,,,,,,,
+/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v,1671057248,verilog,,/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/partial_products.v,,ADDRB;MAC;MULTB;MULTS;MULTS_signed,,,,,,,,
+/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/partial_products.v,1671057016,verilog,,/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sim_1/new/testbench.v,,pp_gen,,,,,,,,
