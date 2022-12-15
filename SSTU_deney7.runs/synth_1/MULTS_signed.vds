@@ -1,0 +1,308 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec 15 11:21:14 2022
+# Process ID: 99197
+# Current directory: /home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.runs/synth_1
+# Command line: vivado -log MULTS_signed.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MULTS_signed.tcl
+# Log file: /home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.runs/synth_1/MULTS_signed.vds
+# Journal file: /home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.runs/synth_1/vivado.jou
+# Running On: aet-linux, OS: Linux, CPU Frequency: 3900.221 MHz, CPU Physical cores: 4, Host memory: 16614 MB
+#-----------------------------------------------------------
+source MULTS_signed.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/utils_1/imports/synth_1/MULTB.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/utils_1/imports/synth_1/MULTB.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top MULTS_signed -part xc7a50ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Vivado_Tcl 4-1810] synth_design options have changed between reference and incremental; A full resynthesis will be run
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 99423
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/ahmetenesturan/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1946.379 ; gain = 372.770 ; free physical = 4019 ; free virtual = 12959
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.168; parent = 1152.630; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2978.191; parent = 1946.383; children = 1031.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MULTS_signed' [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:33]
+INFO: [Synth 8-6157] synthesizing module 'carry_look_ahead_16bit' [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/cla.v:25]
+INFO: [Synth 8-6157] synthesizing module 'carry_look_ahead_4bit' [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/cla.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'carry_look_ahead_4bit' (0#1) [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/cla.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'carry_look_ahead_16bit' (0#1) [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/cla.v:25]
+WARNING: [Synth 8-7071] port 'cout' of module 'carry_look_ahead_16bit' is unconnected for instance 'cla1' [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:83]
+WARNING: [Synth 8-7023] instance 'cla1' of module 'carry_look_ahead_16bit' has 5 connections declared, but only 4 given [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:83]
+WARNING: [Synth 8-7071] port 'cout' of module 'carry_look_ahead_16bit' is unconnected for instance 'cla2' [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:84]
+WARNING: [Synth 8-7023] instance 'cla2' of module 'carry_look_ahead_16bit' has 5 connections declared, but only 4 given [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:84]
+WARNING: [Synth 8-7071] port 'cout' of module 'carry_look_ahead_16bit' is unconnected for instance 'cla3' [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:85]
+WARNING: [Synth 8-7023] instance 'cla3' of module 'carry_look_ahead_16bit' has 5 connections declared, but only 4 given [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:85]
+WARNING: [Synth 8-7071] port 'cout' of module 'carry_look_ahead_16bit' is unconnected for instance 'cla4' [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:86]
+WARNING: [Synth 8-7023] instance 'cla4' of module 'carry_look_ahead_16bit' has 5 connections declared, but only 4 given [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:86]
+WARNING: [Synth 8-7071] port 'cout' of module 'carry_look_ahead_16bit' is unconnected for instance 'cla5' [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:90]
+WARNING: [Synth 8-7023] instance 'cla5' of module 'carry_look_ahead_16bit' has 5 connections declared, but only 4 given [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:90]
+WARNING: [Synth 8-7071] port 'cout' of module 'carry_look_ahead_16bit' is unconnected for instance 'cla6' [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:91]
+WARNING: [Synth 8-7023] instance 'cla6' of module 'carry_look_ahead_16bit' has 5 connections declared, but only 4 given [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:91]
+WARNING: [Synth 8-7071] port 'cout' of module 'carry_look_ahead_16bit' is unconnected for instance 'cla7' [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:95]
+WARNING: [Synth 8-7023] instance 'cla7' of module 'carry_look_ahead_16bit' has 5 connections declared, but only 4 given [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:95]
+WARNING: [Synth 8-7071] port 'cout' of module 'carry_look_ahead_16bit' is unconnected for instance 'cla8' [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:99]
+WARNING: [Synth 8-7023] instance 'cla8' of module 'carry_look_ahead_16bit' has 5 connections declared, but only 4 given [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'MULTS_signed' (0#1) [/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v:33]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2013.348 ; gain = 439.738 ; free physical = 4103 ; free virtual = 13044
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.168; parent = 1152.630; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3045.160; parent = 2013.352; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2031.160 ; gain = 457.551 ; free physical = 4103 ; free virtual = 13044
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.168; parent = 1152.630; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3062.973; parent = 2031.164; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2031.160 ; gain = 457.551 ; free physical = 4103 ; free virtual = 13044
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.168; parent = 1152.630; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3062.973; parent = 2031.164; children = 1031.809
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2031.160 ; gain = 0.000 ; free physical = 4101 ; free virtual = 13041
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ahmetenesturan/Projects/SSTU/Nexys-A7-50T-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [/home/ahmetenesturan/Projects/SSTU/Nexys-A7-50T-Master.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [/home/ahmetenesturan/Projects/SSTU/Nexys-A7-50T-Master.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [/home/ahmetenesturan/Projects/SSTU/Nexys-A7-50T-Master.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ahmetenesturan/Projects/SSTU/Nexys-A7-50T-Master.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Z'. [/home/ahmetenesturan/Projects/SSTU/Nexys-A7-50T-Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ahmetenesturan/Projects/SSTU/Nexys-A7-50T-Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [/home/ahmetenesturan/Projects/SSTU/Nexys-A7-50T-Master.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ahmetenesturan/Projects/SSTU/Nexys-A7-50T-Master.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/ahmetenesturan/Projects/SSTU/Nexys-A7-50T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ahmetenesturan/Projects/SSTU/Nexys-A7-50T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MULTS_signed_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MULTS_signed_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2188.910 ; gain = 0.000 ; free physical = 4026 ; free virtual = 12967
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2188.910 ; gain = 0.000 ; free physical = 4026 ; free virtual = 12967
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/ahmetenesturan/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 4075 ; free virtual = 13016
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.168; parent = 1152.630; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 4075 ; free virtual = 13016
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.168; parent = 1152.630; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 4075 ; free virtual = 13016
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.168; parent = 1152.630; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 4075 ; free virtual = 13017
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.168; parent = 1152.630; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 4075 ; free virtual = 13017
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.168; parent = 1152.630; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 4067 ; free virtual = 13010
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.168; parent = 1152.630; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : synth_design options have changed between reference and incremental
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 64    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 4034 ; free virtual = 12980
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1358.168; parent = 1152.630; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 3921 ; free virtual = 12868
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1456.254; parent = 1250.758; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 3920 ; free virtual = 12867
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1456.340; parent = 1250.844; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 3911 ; free virtual = 12857
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1458.016; parent = 1252.520; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 3915 ; free virtual = 12862
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1458.211; parent = 1252.715; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 3915 ; free virtual = 12862
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1458.227; parent = 1252.730; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 3915 ; free virtual = 12862
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1458.242; parent = 1252.746; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 3915 ; free virtual = 12862
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1458.324; parent = 1252.828; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 3915 ; free virtual = 12862
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1458.324; parent = 1252.828; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 3915 ; free virtual = 12862
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1458.340; parent = 1252.844; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |    10|
+|2     |LUT3 |     6|
+|3     |LUT4 |    22|
+|4     |LUT5 |    22|
+|5     |LUT6 |    61|
+|6     |IBUF |    16|
+|7     |OBUF |    16|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 3915 ; free virtual = 12862
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1458.371; parent = 1252.875; children = 205.538
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3188.707; parent = 2156.898; children = 1031.809
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2188.910 ; gain = 457.551 ; free physical = 3960 ; free virtual = 12907
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2188.910 ; gain = 615.301 ; free physical = 3960 ; free virtual = 12907
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2188.910 ; gain = 0.000 ; free physical = 4000 ; free virtual = 12947
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2188.910 ; gain = 0.000 ; free physical = 4026 ; free virtual = 12972
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: cd0de89b
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 21 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 2188.910 ; gain = 854.715 ; free physical = 4234 ; free virtual = 13181
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.runs/synth_1/MULTS_signed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MULTS_signed_utilization_synth.rpt -pb MULTS_signed_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 15 11:21:48 2022...

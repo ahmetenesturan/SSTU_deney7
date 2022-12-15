@@ -1,6 +1,6 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: /home/ahmetenesturan/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MULTB_tb_behav xil_defaultlib.MULTB_tb xil_defaultlib.glbl -log elaborate.log 
+Running: /home/ahmetenesturan/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot conv_tb_behav xil_defaultlib.conv_tb xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -9,6 +9,9 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.MULTB
-Compiling module xil_defaultlib.MULTB_tb
+Compiling module xil_defaultlib.ADDRB(c_size=20)
+Compiling module xil_defaultlib.ADDRB(b_size=20,c_size=20)
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.conv_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot MULTB_tb_behav
+Built simulation snapshot conv_tb_behav

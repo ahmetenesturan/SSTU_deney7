@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/cla.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module carry_look_ahead_4bit
+INFO: [VRFC 10-311] analyzing module carry_look_ahead_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTS
+INFO: [VRFC 10-311] analyzing module MULTS_signed
+INFO: [VRFC 10-311] analyzing module MULTB
+INFO: [VRFC 10-311] analyzing module ADDRB
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sources_1/new/partial_products.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pp_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ahmetenesturan/Projects/SSTU/SSTU_deney7/SSTU_deney7.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTS_tb
+INFO: [VRFC 10-311] analyzing module MULTS_signed_tb
+INFO: [VRFC 10-311] analyzing module MULTB_tb
+INFO: [VRFC 10-311] analyzing module MAC_tb
+INFO: [VRFC 10-311] analyzing module conv_tb

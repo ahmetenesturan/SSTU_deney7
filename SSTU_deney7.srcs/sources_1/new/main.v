@@ -30,51 +30,53 @@ module MULTS (input [7:0] A, input [7:0] X, output [15:0] result);
 
 endmodule
 
-module MULTS_signed (input [7:0] A, input [7:0] X, output [15:0] result);
+module MULTS_signed (input [7:0] a, input [7:0] x, output [15:0] result);
 
-    wire [7:0] PP [7:0];
-    wire [7:0] PP_BW [7:0];
+wire [7:0] PP [7:0];
+wire [7:0] ppbw [7:0];
+wire [15:0] PP_shifted [7:0];
 
-    genvar i;
-    generate
-        for(i = 0; i <= 7; i = i + 1) begin: PP_LOOP
-            assign PP[i][7:0] = (X[i] * A);
-        end
-    endgenerate
-    genvar z, t;
-    generate
-    for(z = 0; z <= 7; z = z + 1) begin: PP_BW_LOOP
-        for(t = 0; t <= 7; t = t + 1) begin
-            if(z != 7) begin
-                if(t != 7)
-                    assign PP_BW[z][t] = PP[z][t];
-                else
-                    assign PP_BW[z][t] = ~PP[z][t];
-                end
-            else begin
-                if(t == 7)
-                    assign PP_BW[z][t] = PP[z][t];
-                else
-                    assign PP_BW[z][t] = ~PP[z][t];
-            end
-        end
+
+genvar i;
+generate
+    for(i = 0; i < 8; i = i + 1) begin
+    assign PP[i][7:0] = (a[i] * x);
     end
-    endgenerate
+endgenerate
+     
+    
+genvar j, k;
+generate
+        for(j = 0; j < 8; j = j + 1) begin
+            for(k = 0; k < 8; k = k + 1) begin
+                if(j != 7) begin
+                    if(k != 7)
+                        assign ppbw[j][k] = PP[j][k];
+                    else
+                        assign ppbw[j][k] = ~PP[j][k];
+                    end
 
+                    else begin
+                    if(k == 7)
+                        assign ppbw[j][k] = PP[j][k];
+                    else
+                        assign ppbw[j][k] = ~PP[j][k];
+                    end
+            end
+         end
+endgenerate
+    
+    
+    
+genvar l;
+generate
+    for(l = 0; l < 8; l = l + 1) begin
+        assign PP_shifted[l][15:0] = ppbw[l] << l;
+    end
+endgenerate    
+    
 
-    wire [15:0] PP_shifted [7:0];
-
-    genvar u;
-
-    generate
-        for(u = 0; u <= 7; u = u + 1) begin
-            assign PP_shifted[u][15:0] = PP_BW[u] << u;
-        end
-    endgenerate
-
-    //stages
-
-    wire [15:0] sum1, sum2, sum3, sum4, sum5, sum6;
+    wire [15:0] sum1, sum2, sum3, sum4, sum5, sum6, sum7;
 
     //first stage
 
@@ -90,9 +92,11 @@ module MULTS_signed (input [7:0] A, input [7:0] X, output [15:0] result);
 
     //third stage
 
-    carry_look_ahead_16bit cla7(sum5, sum6, 1'b0, result);
-
-
+    carry_look_ahead_16bit cla7(sum5, sum6, 1'b0, sum7);
+    
+    //fourth stage
+    
+    carry_look_ahead_16bit cla8(sum7, 16'h8100, 1'b0, result);
 
 endmodule
 
@@ -116,6 +120,7 @@ module MAC (input clk, reset, input [23:0] data, input [23:0] weight, output reg
 
     wire signed [15:0] product0, product1, product2;
     wire signed [19:0] sum0, sum1;
+    reg [1:0] count;
 
     MULTB m0(data[7:0], weight[7:0], product0);
     MULTB m1(data[15:8], weight[15:8], product1);
@@ -124,8 +129,16 @@ module MAC (input clk, reset, input [23:0] data, input [23:0] weight, output reg
     ADDRB #(.c_size(20)) a0(product0, product1, sum0);
     ADDRB #(.b_size(20), .c_size(20)) a1(product2, sum0, sum1);
 
-    always @(posedge clk)begin
-        result <= result + sum1;
+    always @(posedge clk or posedge reset)begin
+        if(reset == 1) begin
+            result <= 0;
+            count <= 0;
+        end
+        else begin
+            result <= result + sum1;
+            count <= count + 1;
+        end
+        
     end
 
 
